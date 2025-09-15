@@ -1,0 +1,61 @@
+
+
+.button-container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 30px 0 30px 0;
+    /* padding: 10px; */
+    
+}
+
+
+.custom-button {
+width: 327px;
+height: 50px;
+background-color: #87D6FF; /* Cor azul claro */
+color: #ffffff;
+font-family: 'inter';
+font-weight: 100;
+font-size: 18px;
+padding: 10px;
+border: none;
+border-radius: 4px;
+ cursor: pointer;
+}
+.custom-button:hover{ /* Um tom de azul um pouco mais escuro para o hover */
+    transition: all ease 0.4s;
+    background-color: #ffffff;
+    border: solid 2px #87D6FF;
+    color: #87D6FF;
+}
+
+.custom-button:hover .icon{
+transition: all 0.3s ease 0s;
+margin-left: 330px;
+padding-bottom: 4px;
+   background-color: #ffffff;
+    border: solid 2px #87D6FF;
+    color: #87D6FF;
+}
+.custom-button:not(:hover) .icon{
+    transition: all 0.5s ease 0.2s;
+}
+.custom-button:not(:hover) {
+      transition: all 0.5s ease 0.2s;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   background-color: #87D6FF;
+   width: 47px;
+    height: 50px;
+   border: none;
+   border-radius: 4px;
+    margin-left: 325px;
+    margin-top: -37px; 
+    transition: all 0.3s ease 0s;
+   
+}

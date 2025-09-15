@@ -1,0 +1,38 @@
+
+.titulo{
+    font-family: "Inter-bold";
+    font-size: 1.4rem;
+    padding: 5px;
+}
+.menu{
+    max-width: 1060px;
+    margin: 0 auto;
+ 
+    font-family: "Inter";
+    font-size: 1.2rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 15px;
+    padding: 5px;
+}
+.menu li:hover{
+    cursor: pointer;
+    color: #87D6FF;
+    transition: 0.3s;
+    border-bottom: solid #87D6FF;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    flex-direction: row;
+
+    max-width: 1060px;
+    margin: 0 auto;
+ 
+}
+.nav{
+    margin-top: 50px;
+    margin-bottom: 75px;
+}

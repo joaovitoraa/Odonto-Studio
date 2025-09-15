@@ -1,0 +1,27 @@
+.ct-02{
+    background-color: #87D6FF;
+    height: 120px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    color: #fff;
+    font-family: "NeueMontreal";
+    font-size: 30px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.ct-02 span{
+    padding-left: 2%;
+    animation: animou 15s linear infinite;
+}
+
+@keyframes animou {
+    from {
+        transform: translateX(0%)
+    }
+    to{
+        transform:translateX(-100%);
+    }
+}
