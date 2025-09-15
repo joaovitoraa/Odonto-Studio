@@ -1,8 +1,20 @@
+'use client'
 import Image from "next/image";
 import './globals.css';
 import Button from "./components/Button";
+import React from "react";
+import { div } from "framer-motion/client";
+
+  const images = [
+    "/images/cliente.png",
+    "/images/slide-01.jpg" ,
+    "/images/slide-02.jpg",
+    "/images/slide-03.jpg"
+    ]
 
 export default function Home() {
+const [slide, setSlide] = React.useState(images[0]);
+
   return (
    <div >
     <nav className="nav">
@@ -60,12 +72,26 @@ height={564}
  
   <div>
   <Image
-src= "/images/cliente.png"
+  className="slide-principal active"
+src= {slide}
 alt="slide"
 width={428}
 height={500}
+style={{ objectFit: "cover", borderRadius: "8px" }}
 
 />
+<div className="coluna">
+{images.map((img, index) => (
+ <div  key={index}
+className={`${slide === img ? 'active' : ''}`
+}
+onClick={() => setSlide(img)} 
+> 
+<Image src={img} alt= {`miniatura ${index}`} width={72} height={70} style={{ objectFit: "cover" }} />
+
+</div>
+))}
+</div>
   </div>
 </section>
 <section>
@@ -96,13 +122,9 @@ e encontre a <span>solução perfeita</span> para você</h1></div>
     <p>Estética Dental e Harmonia e renovação do seu sorriso.</p>
     </div>
 </div>
-<Image 
-src="/images/assets.png"
-alt="assets"
-width={342}
-height={347
-}
-/>
+<div className="slide">
+
+</div>
 <span>SCROLL</span>
 </section>
 <section>
