@@ -52,7 +52,7 @@ height={564}
     <span>✦  Sorria com confiança </span>
     <span>✦  Sorria com confiança </span>
     <span>✦  Sorria com confiança </span>
-  
+     <span>✦  Sorria com confiança </span>
 
   </div>
 
