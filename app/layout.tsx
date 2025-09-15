@@ -1,5 +1,4 @@
 import Home from "./page";
-import Grid from "./page-grid";
 
 
 
