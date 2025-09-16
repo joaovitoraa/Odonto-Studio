@@ -129,8 +129,7 @@ e encontre a <span>solução perfeita</span> para você</h1></div>
 <section>
   <div>
     <h1>Depoimentos</h1>
-    <Image src="/images/asset-02.png" alt="depoimento" width={428} height={300} 
-   />
+    <p>Veja o que nossos pacientes dizem sobre nós</p>
   </div>
 </section>
    </div>
